@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.custom-transition {
+		@apply transition-all duration-300 ease-in-out;
+	}
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	box-sizing: border-box;
+}
+
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+}
+
+.hover-underline-animation::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #f7f7f7;
+	transform-origin: bottom right;
+	transition: transform 0.3s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
