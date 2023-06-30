@@ -4,14 +4,8 @@ import Code from '../../../ui/Code'
 
 const AboutContent: FC = () => {
 	return (
-		<div
-			className='flex flex-col space-y-8'
-			style={{ backdropFilter: 'blur(3px)' }}
-		>
-			<div
-				className='py-4 px-6 text-xl w-96 font-secondary relative'
-				style={{ backdropFilter: 'blur(3px)' }}
-			>
+		<div className='flex flex-col space-y-8'>
+			<div className='py-4 px-6 text-lg sm:text-xl bg-background-secondary bg-opacity-60 backdrop-blur-sm w-80 sm:w-96 font-secondary relative rounded-lg'>
 				<p>Hey, there👋!</p>
 				<p>
 					I&rsquo;m a&nbsp;20&nbsp;year old software engineer with
@@ -28,8 +22,24 @@ const AboutContent: FC = () => {
 				</p>
 			</div>
 			<div className='flex space-x-8 justify-center items-center'>
-				<PrimaryButton>Hire Me!</PrimaryButton>
-				<SecondaryButton>Contacts</SecondaryButton>
+				<PrimaryButton
+					onClick={() =>
+						document
+							.querySelector('#contact-form')
+							?.scrollIntoView({ behavior: 'smooth' })
+					}
+				>
+					Hire Me!
+				</PrimaryButton>
+				<SecondaryButton
+					onClick={() =>
+						document
+							.querySelector('#contact-form')
+							?.scrollIntoView({ behavior: 'smooth' })
+					}
+				>
+					Contacts
+				</SecondaryButton>
 			</div>
 		</div>
 	)

@@ -1,3 +1,5 @@
-import { HTMLAttributes } from 'react'
+import { HTMLProps } from 'react'
 
-export type Button = HTMLAttributes<HTMLButtonElement> & { disabled?: boolean }
+export type Button = HTMLProps<HTMLButtonElement> & {
+	type?: 'submit' | 'reset' | 'button' | undefined
+}

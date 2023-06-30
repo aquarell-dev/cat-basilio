@@ -3,9 +3,9 @@ import AvatarPhoto from '../../../../assets/avatar.jpg'
 
 const Avatar: FC = () => {
 	return (
-		<div className='flex flex-col space-y-6'>
+		<div className='flex flex-col space-y-6 mb-12 md:mb-0'>
 			<img
-				className='h-64 w-64 rounded-full border'
+				className='h-64 w-64 lg:w-80 lg:h-80 rounded-full border'
 				src={AvatarPhoto}
 				alt='Ilya'
 			/>

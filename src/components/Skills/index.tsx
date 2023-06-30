@@ -3,7 +3,10 @@ import SkillGroup from './components/SkillGroup'
 
 const Skills: FC = () => {
 	return (
-		<div className='relative w-full grid grid-cols-3 gap-x-4 my-8'>
+		<div
+			id='skills'
+			className='relative w-full grid grid-cols-1 md:grid-cols-3 gap-4 my-8'
+		>
 			<SkillGroup
 				title='Front-end Skills'
 				skills={['React.js', 'Next.js', 'TailwindCSS', 'SCSS', 'Redux Toolkit']}

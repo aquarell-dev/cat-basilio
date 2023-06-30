@@ -4,7 +4,7 @@ import Avatar from './components/Avatar'
 
 const About: FC = () => {
 	return (
-		<div className='h-[90vh] flex justify-center items-center space-x-40'>
+		<div className='md:h-screen mb-12 md:mb-0 flex flex-col-reverse md:flex-row md:space-x-10 justify-center items-center'>
 			<AboutContent />
 			<Avatar />
 		</div>

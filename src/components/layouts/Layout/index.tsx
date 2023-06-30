@@ -12,7 +12,7 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
 
 	return (
 		<>
-			<div className='min-h-screen bg-background text-text pb-8'>
+			<div className='z-over min-h-screen bg-background text-text pb-8'>
 				<Container>
 					<Navbar />
 					{children}

@@ -36,7 +36,7 @@ const projects: TProject[] = [
 
 const Projects: FC = () => {
 	return (
-		<div className='projects-grid mb-8'>
+		<div id='projects' className='projects-grid mb-8'>
 			{projects.map(project => (
 				<Project project={project} key={project.id} />
 			))}
