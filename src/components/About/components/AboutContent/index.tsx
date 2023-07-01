@@ -5,7 +5,7 @@ import Code from '../../../ui/Code'
 const AboutContent: FC = () => {
 	return (
 		<div className='flex flex-col space-y-8'>
-			<div className='py-4 px-6 text-lg sm:text-xl bg-background-secondary bg-opacity-60 backdrop-blur-sm w-80 sm:w-96 font-secondary relative rounded-lg'>
+			<div className='py-4 px-6 text-[16px] sm:text-xl bg-background-secondary bg-opacity-60 backdrop-blur-sm w-full sm:w-96 font-secondary relative rounded-lg'>
 				<p>Hey, there👋!</p>
 				<p>
 					I&rsquo;m a&nbsp;20&nbsp;year old software engineer with

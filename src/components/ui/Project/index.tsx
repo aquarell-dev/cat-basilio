@@ -4,12 +4,12 @@ import type { Project as TProject } from './project.types'
 
 const Project: FC<{ project: TProject }> = ({ project }) => {
 	return (
-		<div className='py-6 px-16 flex flex-col space-y-4 justify-between w-full h-full bg-background-secondary'>
-			<h3 className='text-2xl font-medium font-primary text-center'>
+		<div className='py-2 px-4 md:py-6 md:px-16 flex flex-col space-y-4 justify-between w-full h-full bg-background-secondary'>
+			<h3 className='text-xl md:text-2xl font-medium font-primary text-center'>
 				{project.title}
 			</h3>
 			<img src={project.photo} alt={project.title} />
-			<p className='text-xl font-secondary text-center'>
+			<p className='text-[16px] md:text-xl font-secondary text-center'>
 				{project.description}
 			</p>
 			<div className='flex justify-center items-center space-x-8'>
