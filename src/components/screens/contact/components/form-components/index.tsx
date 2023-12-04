@@ -5,7 +5,7 @@ import {
 	RegisterOptions,
 	useFormContext,
 } from 'react-hook-form'
-import { cn } from '../../../../utils'
+import { cn } from '../../../../../utils'
 
 type ReactHookFormProps<T extends HTMLElement> = {
 	name: string

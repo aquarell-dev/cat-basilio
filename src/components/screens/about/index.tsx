@@ -1,6 +1,6 @@
 import { FC } from 'react'
-import AboutContent from './components/AboutContent'
-import Avatar from './components/Avatar'
+import AboutContent from './components/about-content'
+import Avatar from './components/avatar'
 
 const About: FC = () => {
 	return (

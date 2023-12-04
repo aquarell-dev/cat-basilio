@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import AvatarPhoto from '../../../../assets/avatar.jpg'
+import AvatarPhoto from '../../../../../assets/avatar.jpg'
 
 const Avatar: FC = () => {
 	return (

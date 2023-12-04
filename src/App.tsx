@@ -1,9 +1,9 @@
 import { FC } from 'react'
-import About from './components/About'
-import Contact from './components/Contact'
-import Projects from './components/Projects'
-import Skills from './components/Skills'
-import Layout from './components/layouts/Layout'
+import Layout from './components/layouts/layout'
+import About from './components/screens/about'
+import Contact from './components/screens/contact'
+import Projects from './components/screens/projects'
+import Skills from './components/screens/skills'
 
 const App: FC = () => {
 	return (
