@@ -2,7 +2,11 @@
 	"compilerOptions": {
 		"target": "ES2020",
 		"useDefineForClassFields": true,
-		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"lib": [
+			"ES2020",
+			"DOM",
+			"DOM.Iterable"
+		],
 		"module": "ESNext",
 		"skipLibCheck": true,
 		"moduleResolution": "node",
@@ -15,14 +19,29 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
+		"allowSyntheticDefaultImports": true,
 		"baseUrl": "./src",
 		"paths": {
-			"@ui/*": ["./components/ui/*"],
-			"@screens/*": ["./components/screens/*"],
-			"@layouts/*": ["./components/layouts/*"],
-			"@assets/*": ["../public/assets/*"]
+			"@ui/*": [
+				"./components/ui/*"
+			],
+			"@screens/*": [
+				"./components/screens/*"
+			],
+			"@layouts/*": [
+				"./components/layouts/*"
+			],
+			"@assets/*": [
+				"../public/assets/*"
+			]
 		}
 	},
-	"include": ["src"],
-	"references": [{ "path": "./tsconfig.node.json" }]
+	"include": [
+		"src"
+	],
+	"references": [
+		{
+			"path": "./tsconfig.node.json"
+		}
+	]
 }

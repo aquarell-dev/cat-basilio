@@ -30,16 +30,11 @@ module.exports = {
 		'import/order': [
 			'error',
 			{
-				groups: [
-					['builtin', 'external'], // React and external libraries
-					['internal'], // Your imports with @ notation
-					['parent', 'sibling'], // Local components
-					['index'], // Index files
-				],
+				'groups': ['object', ['builtin', 'external'], 'internal', ['parent', 'sibling'], 'index'],
 				'newlines-between': 'always',
-				alphabetize: {
-					order: 'asc',
-					caseInsensitive: true,
+				'alphabetize': {
+					'order': 'asc',
+					'caseInsensitive': true,
 				},
 			},
 		],
