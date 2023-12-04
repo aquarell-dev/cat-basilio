@@ -1,6 +1,8 @@
 import { FC } from 'react'
 import AvatarPhoto from '../../../../../assets/avatar.jpg'
 
+// todo show actual russian flag on pc, emoji on mobile
+
 const Avatar: FC = () => {
 	return (
 		<div className='flex flex-col space-y-6 mb-12 md:mb-0'>
@@ -9,7 +11,9 @@ const Avatar: FC = () => {
 				src={AvatarPhoto}
 				alt='Ilya'
 			/>
-			<p className='text-xl font-primary text-center'>Russia, 🇷🇺</p>
+			<p className='text-xl font-primary text-center'>
+				Voronezh, &#x1F1F7;&#x1F1FA;
+			</p>
 		</div>
 	)
 }

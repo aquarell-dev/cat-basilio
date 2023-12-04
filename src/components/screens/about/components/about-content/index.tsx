@@ -2,6 +2,8 @@ import { FC } from 'react'
 import { PrimaryButton, SecondaryButton } from '../../../../ui/Button'
 import Code from '../../../../ui/Code'
 
+const GITHUB_URl = 'https://github.com/aquarell-dev'
+
 const AboutContent: FC = () => {
 	return (
 		<div className='flex flex-col space-y-8'>
@@ -31,14 +33,10 @@ const AboutContent: FC = () => {
 				>
 					Hire Me!
 				</PrimaryButton>
-				<SecondaryButton
-					onClick={() =>
-						document
-							.querySelector('#contact-form')
-							?.scrollIntoView({ behavior: 'smooth' })
-					}
-				>
-					Contacts
+				<SecondaryButton>
+					<a href={GITHUB_URl} target='_blank'>
+						Github
+					</a>
 				</SecondaryButton>
 			</div>
 		</div>

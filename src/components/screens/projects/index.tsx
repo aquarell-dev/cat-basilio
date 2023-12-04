@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 import '../../../css/grid.css'
-import Project from '../../ui/Project'
+import Project from './components/project'
 import { projects } from './projects.data'
 
 const Projects: FC = () => {

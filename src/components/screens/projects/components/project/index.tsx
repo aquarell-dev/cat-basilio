@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { PrimaryButton, SecondaryButton } from '../Button'
+import { PrimaryButton, SecondaryButton } from '../../../../ui/Button'
 import type { Project as TProject } from './project.types'
 
 const Project: FC<{ project: TProject }> = ({ project }) => {
