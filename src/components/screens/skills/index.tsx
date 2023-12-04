@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import SkillGroup from './components/SkillGroup'
+import SkillGroup from './components/skill-group'
 
 const Skills: FC = () => {
 	return (

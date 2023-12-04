@@ -1,11 +1,8 @@
 import { FC } from 'react'
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form'
-import { PrimaryButton } from '../../../ui/Button'
-import useTelegram from '../../hooks/useTelegram'
-import {
-	ReactHookFormInput,
-	ReactHookFormTextArea,
-} from '../ReactHookFormComponents'
+import { PrimaryButton } from '../../../../ui/Button'
+import useTelegram from '../../hooks/useTelegram.ts'
+import { ReactHookFormInput, ReactHookFormTextArea } from '../form-components'
 
 type FormInputs = {
 	name: string

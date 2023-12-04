@@ -1,6 +1,6 @@
 import { FC } from 'react'
-import { PrimaryButton, SecondaryButton } from '../../../ui/Button'
-import Code from '../../../ui/Code'
+import { PrimaryButton, SecondaryButton } from '../../../../ui/Button'
+import Code from '../../../../ui/Code'
 
 const AboutContent: FC = () => {
 	return (
