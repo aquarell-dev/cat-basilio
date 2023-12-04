@@ -1,9 +1,9 @@
 import CSGOLuck from '../../../assets/csgoluck.png'
 import Revity from '../../../assets/revity.png'
 import Tempo from '../../../assets/tempo.png'
-import type { Project as TProject } from '../../ui/Project/project.types'
+import { Project } from './components/project/project.types'
 
-export const projects: TProject[] = [
+export const projects: Project[] = [
 	{
 		id: 1,
 		title: 'Tempo Paints Distributor',
