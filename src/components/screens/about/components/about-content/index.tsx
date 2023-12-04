@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { PrimaryButton, SecondaryButton } from '../../../../ui/Button'
+import Button from '../../../../ui/button'
 import Code from '../../../../ui/code'
 
 const GITHUB_URl = 'https://github.com/aquarell-dev'
@@ -24,20 +24,21 @@ const AboutContent: FC = () => {
 				</p>
 			</div>
 			<div className='flex space-x-8 justify-center items-center'>
-				<PrimaryButton
+				<Button
 					onClick={() =>
 						document
 							.querySelector('#contact-form')
 							?.scrollIntoView({ behavior: 'smooth' })
 					}
+					variant='primary'
 				>
 					Hire Me!
-				</PrimaryButton>
-				<SecondaryButton>
+				</Button>
+				<Button variant='secondary'>
 					<a href={GITHUB_URl} target='_blank'>
 						Github
 					</a>
-				</SecondaryButton>
+				</Button>
 			</div>
 		</div>
 	)

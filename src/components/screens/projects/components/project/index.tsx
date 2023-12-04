@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { PrimaryButton, SecondaryButton } from '../../../../ui/Button'
+import Button from '../../../../ui/button'
 import type { Project as TProject } from './project.types'
 
 const Project: FC<{ project: TProject }> = ({ project }) => {
@@ -13,16 +13,16 @@ const Project: FC<{ project: TProject }> = ({ project }) => {
 				{project.description}
 			</p>
 			<div className='flex justify-center items-center space-x-8'>
-				<PrimaryButton disabled={!project.visitUrl}>
+				<Button disabled={!project.visitUrl}>
 					<a href={project.visitUrl} target='_blank'>
 						Visit
 					</a>
-				</PrimaryButton>
-				<SecondaryButton disabled={!project.githubUrl}>
+				</Button>
+				<Button disabled={!project.githubUrl} variant='secondary'>
 					<a href={project.githubUrl} target='_blank'>
 						Github
 					</a>
-				</SecondaryButton>
+				</Button>
 			</div>
 		</div>
 	)

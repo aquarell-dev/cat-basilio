@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form'
-import { PrimaryButton } from '../../../../ui/Button'
+import Button from '../../../../ui/button/index.tsx'
 import useTelegram from '../../hooks/useTelegram.ts'
 import { ReactHookFormInput, ReactHookFormTextArea } from '../form-components'
 
@@ -38,16 +38,16 @@ const ContactForm: FC = () => {
 						options={{ required: 'Contact is required' }}
 						placeholder='Your Contact(e.g. telegram, mail)'
 					/>
-					<PrimaryButton className='hidden md:block' type='submit'>
+					<Button className='hidden md:block' type='submit' variant='primary'>
 						Submit
-					</PrimaryButton>
+					</Button>
 				</div>
 				<div className='flex flex-col space-y-4 w-full'>
 					<ReactHookFormInput name='subject' placeholder='Subject' />
 					<ReactHookFormTextArea name='message' placeholder='Message' />
-					<PrimaryButton className='md:hidden' type='submit'>
+					<Button className='md:hidden' type='submit' variant='primary'>
 						Submit
-					</PrimaryButton>
+					</Button>
 				</div>
 			</form>
 		</FormProvider>
