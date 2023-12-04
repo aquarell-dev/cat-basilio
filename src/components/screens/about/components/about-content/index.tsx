@@ -1,5 +1,5 @@
-import Button from '@ui/button'
-import Code from '@ui/code'
+import Button from '@ui/button/index'
+import Code from '@ui/code/index'
 import { FC } from 'react'
 
 const GITHUB_URl = 'https://github.com/aquarell-dev'
