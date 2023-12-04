@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { PrimaryButton, SecondaryButton } from '../../../../ui/Button'
-import Code from '../../../../ui/Code'
+import Code from '../../../../ui/code'
 
 const GITHUB_URl = 'https://github.com/aquarell-dev'
 

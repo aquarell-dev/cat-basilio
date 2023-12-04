@@ -27,7 +27,7 @@ export const ReactHookFormInput: FC<ReactHookFormProps<HTMLInputElement>> = ({
 			type='text'
 			className={cn(
 				'px-4 py-2 bg-background font-secondary outline-none',
-				errors[name] ? 'border border-red-500' : ''
+				errors[name] && 'border border-red-500'
 			)}
 			placeholder={errors[name] ? 'error' : props.placeholder}
 			{...register(name, options)}
