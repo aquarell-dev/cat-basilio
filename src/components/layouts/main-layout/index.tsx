@@ -1,10 +1,11 @@
+import Container from '@ui/container'
+import Navbar from '@ui/navbar'
 import { FC, ReactNode, useCallback } from 'react'
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
 import { Engine } from 'tsparticles-engine'
+
 import useMediaQuery from '../../../hooks/useMediaQuery'
-import Container from '../../ui/container'
-import Navbar from '../../ui/navbar'
 
 const Layout: FC<{ children: ReactNode }> = ({ children }) => {
 	const particlesInit = useCallback(async (main: Engine) => {
